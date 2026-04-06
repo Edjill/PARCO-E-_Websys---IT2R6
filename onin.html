@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Edjill D. Parco</title>
+  <link rel="stylesheet" href="onin.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="profile-left">
+        <img src="onin.jpg" alt="Professional profile photo of Edjill D. Parco" class="profile-img" />
+      </div>
+      <div class="profile-right">
+        <h1>Edjill D. Parco</h1>
+        <p class="tagline">Aspiring Developer | Tech Enthusiast | Student</p>
+        <button id="downloadBtn" style="margin-top: 10px; background-color: #415A77; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold;">Download CV</button>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container nav-links">
+        <a href="#about">Profile</a>
+        <a href="#education">Background</a>
+        <a href="#skills">Expertise</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Get In Touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container resume-grid">
+    <section id="about" class="card">
+      <h2>About My Profile</h2>
+      <p>
+        I am Edjill D. Parco, a dedicated student and aspiring developer. I am passionate about 
+        building functional web applications and learning the latest technologies in the industry. 
+        I enjoy solving problems through code and constantly improving my technical skill set.
+      </p>
+
+      <button id="toggleMoreBtn">View More</button>
+      <div id="moreAbout" class="hidden">
+        <p>
+          I am currently focused on mastering front-end development and expanding my knowledge 
+          of software architecture. My goal is to contribute to innovative projects while 
+          growing as a professional in the tech field.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Background</h2>
+      <table class="education-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Institution</th>
+            <th>Program</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024 - Present</td>
+            <td>University of Science and Technology of Southern Philippines</td>
+            <td>Bachelor of Science in Information Technology</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Expertise</h2>
+      <ul id="skillsList" class="skills-list">
+          <li>Web Development (HTML & CSS)</li>
+          <li>JavaScript Programming</li>
+          <li>Problem Solving & Logic</li>
+          <li>Version Control (Git/GitHub)</li>
+          <li>UI/UX Design Awareness</li>
+          <li>Automation</li>
+          <li>CSR</li>
+      </ul>
+      <div class="skill-adder-group" style="margin-top: 20px; display: flex; gap: 10px;">
+        <input type="text" id="newSkillInput" placeholder="Add a new skill..." style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+        <button id="addSkillBtn" style="background-color: #1B263B; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold;">Add Skill</button>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Work / Portfolio</h2>
+      <div id="projectContainer" class="project-list">
+        <div class="project-item">
+          <h3>Personal Portfolio</h3>
+          <p>An interactive web project showcasing web development skills and UI/UX design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Get In Touch</h2>
+      <p>Email: <a href="mailto:parco.edjillnino@gmail.com">parco.edjillnino@gmail.com</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/edjill.nino.parco/" target="_blank">facebook.com/edjill.nino.parco</a></p>
+      <p>GitHub: <a href="https://github.com/Edjill" target="_blank">github.com/Edjill</a></p>
+
+      <h3>Send a Message</h3>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <div style="display: flex; gap: 10px;">
+          <button type="submit" style="flex: 1;">Send</button>
+          <button type="button" id="clearFormBtn" style="background-color: #774141; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; font-weight: bold;">Clear</button>
+        </div>
+      </form>
+      <p id="formFeedback"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Edjill D. Parco. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top" style="position: fixed; bottom: 20px; right: 20px; display: none; background-color: #1B263B; color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; z-index: 1001; font-weight: bold;">↑</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="onin.js"></script>
+</body>
+</html>
